@@ -13,6 +13,7 @@ spring:
           search-paths:
             - lagou-config
       label: master
+      name: lagou-config
 #  datasource:
 #    driver-class-name: com.mysql.jdbc.Driver
 #    username: root
