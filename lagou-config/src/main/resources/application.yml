@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          repos:
+          uri: https://gitee.com/xiaoyangzhang/stage-3-module-4.git
 eureka:
   client:
     service-url:
