@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          uri: https://gitee.com/xiaoyangzhang/lagou-config.git
+          uri: https://github.com/xiaoyangzhang/lagou-config.git
           username: xiaoyangzhang1990@163.com
           password: zxy227575
           search-paths:
