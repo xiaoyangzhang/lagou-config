@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: lagou-eureka-server
+---
+spring:
+  profiles: local1
+eureka:
+  client:
+    fetch-registry: true
+    service-url:
+      defaultZone: http://lagou-server-B:8762/eureka
+    register-with-eureka: true
+    region: localhost
+  instance:
+    hostname: lagou-server-A
+server:
+  port: 8761
+
+---
+
+spring:
+  profiles: local2
+eureka:
+  client:
+    fetch-registry: true
+    service-url:
+      defaultZone: http://lagou-server-A:8761/eureka
+    register-with-eureka: true
+    region: localhost
+  instance:
+    hostname: lagou-server-B
+server:
+  port: 8762

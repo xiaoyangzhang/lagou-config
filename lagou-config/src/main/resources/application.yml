@@ -1,0 +1,14 @@
+server:
+  port: 9006
+spring:
+  application:
+    name: lagou-config
+  cloud:
+    config:
+      server:
+        git:
+          repos:
+eureka:
+  client:
+    service-url:
+      defaultZone: http://lagou-server-A:8761/eureka,http://lagou-server-B:8762/eureka

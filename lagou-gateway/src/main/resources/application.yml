@@ -1,0 +1,26 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: lagou-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: service-user-router
+          uri: lb://lagou-service-user
+          predicates:
+            - Path=/user/**
+        - id: service-code-router
+          uri: lb://lagou-service-code
+          predicates:
+            - Path=/code/**
+        - id: service-email-router
+          uri: lb://lagou-service-email
+          predicates:
+            - Path=/email/**
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://lagou-server-A:8761/eureka,http://lagou-server-B:8762/eureka
