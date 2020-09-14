@@ -7,7 +7,18 @@ spring:
     config:
       server:
         git:
-          uri: https://gitee.com/xiaoyangzhang/stage-3-module-4.git
+          uri: https://gitee.com/xiaoyangzhang/lagou-config.git
+          username: xiaoyangzhang1990@163.com
+          password: zxy227575
+          search-paths:
+            - lagou-config
+      label: master
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useEncoding=true
 eureka:
   client:
     service-url:
