@@ -15,15 +15,25 @@ spring:
           default-label: master
           skip-ssl-validation: true
           timeout: 20
-#          repos: https://github.com/xiaoyangzhang/lagou-config
+      #          repos: https://github.com/xiaoyangzhang/lagou-config
       label: master
-#  profiles: dev
+  #  profiles: dev
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: root
     url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useUnicode=true
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   client:
     service-url:
       defaultZone: http://lagou-server-A:8761/eureka,http://lagou-server-B:8762/eureka
+rabbitmq:
+host: 127.0.0.1
+port: 5672
+username: guest
+password: guest
