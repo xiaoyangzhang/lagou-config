@@ -1,25 +1,25 @@
 #server:
 #  port: 9006
-#spring:
-#  application:
-#    name: lagou-config
-#  cloud:
-#    config:
-#      server:
-#        git:
-#          uri: https://gitee.com/xiaoyangzhang/lagou-config.git
-#          username: xiaoyangzhang1990@163.com
-#          password: zxy227575
-#          search-paths:
-#            - lagou-config
-#      label: master
-##  datasource:
-##    driver-class-name: com.mysql.jdbc.Driver
-##    username: root
-##    password: root
-##    type: com.alibaba.druid.pool.DruidDataSource
-##    url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useEncoding=true
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://lagou-server-A:8761/eureka,http://lagou-server-B:8762/eureka
+spring:
+  application:
+    name: lagou-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xiaoyangzhang/lagou-config.git
+          username: xiaoyangzhang1990@163.com
+          password: zxy227575
+          search-paths:
+            - lagou-config
+      label: master
+#  profiles: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useUnicode=true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://lagou-server-A:8761/eureka,http://lagou-server-B:8762/eureka
