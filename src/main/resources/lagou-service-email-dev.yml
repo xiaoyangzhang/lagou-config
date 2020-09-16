@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: lagou-service-email
+  mail:
+    default-encoding: UTF-8
+    host: smtp.163.com
+    username: 17300136627@163.com
+    password: zxy227575
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
