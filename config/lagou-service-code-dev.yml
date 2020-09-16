@@ -6,3 +6,7 @@ spring:
     #    type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useUnicode=true
   profiles: dev
+verify:
+  code:
+    valid:
+      time: 1
