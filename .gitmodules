@@ -1,0 +1,3 @@
+[submodule "lagou-gateway/lagou-config"]
+	path = lagou-gateway/lagou-config
+	url = http://gitlab.guoguokeji.com/guozhi-backend/guozhi-api-main.git

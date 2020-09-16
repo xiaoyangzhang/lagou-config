@@ -1,0 +1,23 @@
+#server:
+#  port: 8082
+#spring:
+#  application:
+#    name: lagou-service-email
+#  mail:
+#    default-encoding: UTF-8
+#    host: smtp.163.com
+#    username: 17300136627@163.com
+#    password: zxy227575
+#    properties:
+#      mail:
+#        smtp:
+#          ssl:
+#            enable: true
+#          auth: true
+
+
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://lagou-server-A:8761/eureka,http://lagou-server-B:8762/eureka

@@ -1,0 +1,22 @@
+server:
+  port: 8082
+spring:
+  cloud:
+    config:
+      name: lagou-service-email
+      uri: http://localhost:9006
+      label: master
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: lagou-config
+      allow-override: true
+  application:
+    name: lagou-service-email
+  profiles:
+    active: dev
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://lagou-server-A:8761/eureka,http://lagou-server-B:8762/eureka

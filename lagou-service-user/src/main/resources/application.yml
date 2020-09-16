@@ -1,0 +1,14 @@
+#server:
+#  port: 8080
+#spring:
+#  application:
+#    name: lagou-service-user
+#  cloud:
+#    config:
+#      name: lagou-config
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://lagou-server-A:8761/eureka,http://lagou-server-B:8762/eureka
+#mybatis:
+#  mapper-locations:
