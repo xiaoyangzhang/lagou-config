@@ -17,6 +17,9 @@ spring:
           timeout: 20
       #          repos: https://github.com/xiaoyangzhang/lagou-config
       label: master
+    bus:
+      trace:
+        enabled: true
   #  profiles: dev
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
@@ -38,3 +41,5 @@ management:
     web:
       exposure:
         include: "*"
+  security:
+    enabled: false
