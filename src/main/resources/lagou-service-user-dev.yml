@@ -1,8 +1,8 @@
 spring:
-  application:
-    name: lagou-service-user
-  cloud:
-    config:
+#  application:
+#    name: lagou-service-user
+#  cloud:
+#    config:
       #      server:
       #        git:
       #          uri: https://github.com/xiaoyangzhang/lagou-config.git
@@ -11,7 +11,7 @@ spring:
       #          search-paths:
       #            - lagou-config
       #      label: master
-      name: lagou-config
+#      name: lagou-config
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
@@ -31,5 +31,4 @@ spring:
   #    url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useUnicode=true
   #  application:
   #    name: service-common
-  profiles:
-    active: dev
+  profiles: dev

@@ -12,6 +12,7 @@ spring:
           password: zxy227575
           search-paths:
             - lagou-config
+          default-label: master
       label: master
 #  profiles: dev
   datasource:
