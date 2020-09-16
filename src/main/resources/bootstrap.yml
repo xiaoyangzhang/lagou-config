@@ -11,7 +11,7 @@ spring:
           username: xiaoyangzhang1990@163.com
           password: zxy227575
           search-paths:
-            - lagou-config
+            - config
           default-label: master
           skip-ssl-validation: true
           timeout: 20
