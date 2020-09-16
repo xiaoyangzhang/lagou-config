@@ -15,7 +15,7 @@ spring:
           default-label: master
           skip-ssl-validation: true
           timeout: 20
-          repos: https://github.com/xiaoyangzhang/lagou-config
+#          repos: https://github.com/xiaoyangzhang/lagou-config
       label: master
 #  profiles: dev
   datasource:
