@@ -40,6 +40,6 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: 'bus-refresh'
   security:
     enabled: false
