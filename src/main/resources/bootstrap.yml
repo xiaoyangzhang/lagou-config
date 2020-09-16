@@ -32,8 +32,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://lagou-server-A:8761/eureka,http://lagou-server-B:8762/eureka
-rabbitmq:
-host: 127.0.0.1
-port: 5672
-username: guest
-password: guest
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
